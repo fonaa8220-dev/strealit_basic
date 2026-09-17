@@ -1,0 +1,280 @@
+:root {
+    --ink: #23483e;
+    --muted: #648377;
+    --mint: #e7f5ec;
+    --mint-line: #cfe6d8;
+    --peach: #f5ad83;
+    --paper: #ffffff;
+}
+
+.stApp {
+    background:
+        radial-gradient(circle at 85% 5%, #ffe9d8 0, transparent 28%),
+        radial-gradient(circle at 12% 82%, #e0f4e8 0, transparent 34%),
+        #f7fbf8;
+    color: var(--ink);
+    font-family: "Pretendard", "Segoe UI", "Malgun Gothic", sans-serif;
+}
+
+[data-testid="stHeader"] {
+    background: transparent;
+}
+
+[data-testid="stMainBlockContainer"] {
+    max-width: 980px;
+    padding-top: 2.2rem;
+    padding-bottom: 7rem;
+}
+
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #effaf2 0%, #e4f4e9 100%);
+    border-right: 1px solid var(--mint-line);
+}
+
+[data-testid="stSidebar"] [data-testid="stSidebarContent"] {
+    padding-top: 1.5rem;
+}
+
+[data-testid="stSidebar"] h4 {
+    color: var(--ink);
+    letter-spacing: -0.03em;
+}
+
+.stApp h1,
+.stApp h2,
+.stApp h3 {
+    color: var(--ink);
+    letter-spacing: -0.045em;
+}
+
+.stApp h1 {
+    font-weight: 750;
+}
+
+.stApp [data-testid="stCaptionContainer"] {
+    color: var(--muted);
+}
+
+.st-key-login_panel,
+.st-key-chat_header,
+.st-key-history_header,
+.st-key-history_filters,
+.st-key-empty_chat {
+    background: var(--paper);
+    border: 1px solid var(--mint-line);
+    border-radius: 26px;
+    box-shadow: 0 14px 38px #315f4b12;
+}
+
+.st-key-login_panel {
+    max-width: 620px;
+    margin: 4vh auto 0;
+    padding: 2.1rem 2.3rem 1.7rem;
+}
+
+.st-key-login_panel h1,
+.st-key-empty_chat h3,
+.st-key-empty_chat [data-testid="stCaptionContainer"] {
+    text-align: center;
+}
+
+.st-key-login_panel h1 {
+    margin: -0.3rem 0 1.2rem;
+    font-size: 2.5rem;
+}
+
+.st-key-login_panel [data-testid="stForm"] {
+    background: #f9fcfa;
+    border: 1px solid #e2eee6;
+    border-radius: 20px;
+    padding: 1.3rem 1.4rem;
+}
+
+.st-key-login_panel [data-testid="stAlert"] {
+    margin-top: 1.3rem;
+    border-radius: 16px;
+}
+
+[data-testid="stTabs"] [role="tablist"] {
+    border-bottom: 1px solid var(--mint-line);
+    margin-bottom: 1rem;
+}
+
+[data-testid="stTab"][aria-selected="true"] {
+    color: #2e765d;
+    border-bottom-color: #75b99a;
+}
+
+[data-testid="stTab"][aria-selected="true"] .react-aria-SelectionIndicator {
+    background: #75b99a;
+}
+
+[data-testid="stRadioOption"][data-selected="true"] > div > div:first-child {
+    background: #75b99a;
+}
+
+.st-key-chat_header,
+.st-key-history_header {
+    padding: 1.15rem 1.6rem;
+    margin-bottom: 1.25rem;
+}
+
+.st-key-chat_header h1,
+.st-key-history_header h1 {
+    margin: 0;
+}
+
+.st-key-chat_status {
+    margin: 0 0 1.15rem;
+}
+
+.st-key-chat_status [data-testid="stCaptionContainer"] {
+    display: inline-block;
+    width: max-content;
+    background: var(--mint);
+    border: 1px solid var(--mint-line);
+    border-radius: 999px;
+    padding: 0.25rem 0.8rem;
+}
+
+.st-key-empty_chat {
+    padding: 3rem 1.5rem;
+    margin-top: 1.5rem;
+    min-height: 280px;
+}
+
+.st-key-empty_chat h3 {
+    margin: 0.5rem 0 0;
+}
+
+.st-key-history_filters {
+    padding: 1.35rem 1.6rem 0.65rem;
+    margin-bottom: 1.5rem;
+}
+
+[data-testid="stChatMessage"] {
+    width: fit-content;
+    min-width: 260px;
+    max-width: 88%;
+    background: var(--paper);
+    border: 1px solid #deeee4;
+    border-radius: 22px;
+    box-shadow: 0 6px 22px #315f4b0e;
+    padding: 0.35rem 0.6rem;
+    margin-bottom: 0.75rem;
+}
+
+[data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarUser"]) {
+    margin-left: auto;
+    background: #fff0e6;
+    border-color: #f3d8c7;
+}
+
+.stButton > button,
+[data-testid="stPageLink"] a,
+[data-testid="stFormSubmitButton"] button {
+    border-radius: 13px;
+    border-color: #b9d9c7;
+    color: var(--ink);
+    font-weight: 650;
+    transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+[data-testid="stPageLink"] a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9fcfa;
+    border: 1px solid #b9d9c7;
+    padding: 0.48rem 0.7rem;
+}
+
+.stButton > button:hover,
+[data-testid="stPageLink"] a:hover,
+[data-testid="stFormSubmitButton"] button:hover {
+    background: #e7f5ec;
+    color: var(--ink);
+    border-color: #82bd9d;
+    transform: translateY(-1px);
+}
+
+[data-testid="stBaseButton-primary"],
+[data-testid="stBaseButton-primaryFormSubmit"] {
+    background: var(--peach);
+    border-color: var(--peach);
+    color: #3e342d;
+}
+
+[data-testid="stBaseButton-primary"]:hover,
+[data-testid="stBaseButton-primaryFormSubmit"]:hover {
+    background: #ed9e71;
+    border-color: #ed9e71;
+    color: #3e342d;
+}
+
+[data-testid="stTextInput"] input,
+[data-testid="stChatInput"] textarea,
+[data-baseweb="select"] > div {
+    border-radius: 13px;
+    background: #ffffff;
+}
+
+[data-testid="stTextInput"] input:focus,
+[data-testid="stChatInput"] textarea:focus {
+    outline-color: #75b99a;
+}
+
+[data-testid="stChatInput"] > div {
+    border-radius: 18px;
+    box-shadow: 0 8px 28px #315f4b1a;
+}
+
+.st-key-key_notice [data-testid="stAlert"],
+.st-key-history_empty [data-testid="stAlert"] {
+    background: #e9f5ed;
+    border: 1px solid var(--mint-line);
+    border-radius: 16px;
+    color: var(--ink);
+}
+
+.st-key-key_notice [data-testid="stAlertContainer"],
+.st-key-history_empty [data-testid="stAlertContainer"] {
+    background: transparent;
+}
+
+[data-testid="stDialog"] [role="dialog"] {
+    background: #f8fcf9;
+    color: var(--ink);
+    border: 1px solid var(--mint-line);
+    border-radius: 26px;
+    box-shadow: 0 24px 70px #244a3d38;
+}
+
+[data-testid="stDialog"] [data-testid="stTextInput"] input {
+    background: var(--paper);
+    border: 1px solid #b9d9c7;
+}
+
+@media (max-width: 700px) {
+    [data-testid="stMainBlockContainer"] {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .st-key-login_panel,
+    .st-key-chat_header,
+    .st-key-history_header,
+    .st-key-history_filters {
+        padding: 1.2rem;
+        border-radius: 20px;
+    }
+
+    .st-key-login_panel {
+        margin-top: 1rem;
+    }
+
+    [data-testid="stChatMessage"] {
+        max-width: 96%;
+    }
+}

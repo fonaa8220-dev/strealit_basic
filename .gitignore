@@ -2,5 +2,5 @@
 .venv/
 __pycache__/
 .uv-cache/
-chat_history.db
+*.db
 uploads/
